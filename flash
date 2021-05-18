@@ -1,7 +1,7 @@
 #!/bin/bash
 
 FLASH_ADDRESS=0x08000000
-BUILD_DIR=.
+BUILD_DIR=./target/thumbv7em-none-eabihf/debug
 TARGET_BIN=saw
 
 dfu-util -a 0 -s $FLASH_ADDRESS:leave -D $BUILD_DIR/$TARGET_BIN -d ,0483:df11

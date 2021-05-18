@@ -29,7 +29,7 @@ const APP: () = {
         let mut system = system::System::init(ctx.core, ctx.device);
         info!("Startup done!");
 
-        system.timer2.set_freq(500.ms());
+        system.timer2.set_freq(1.ms());
 
         init::LateResources {
             seed_led: system.gpio.led,
